@@ -1,0 +1,15 @@
+
+#!/bin/bash
+# Ativa o ambiente virtual e roda o programa YOLO
+
+cd ~
+source yolovenv/bin/activate
+
+# Instala dependÃªncias se ainda nÃ£o estiverem instaladas
+pip install bleak ultralytics opencv-python --quiet
+
+# Vai para a pasta onde estÃ¡ o cÃ³digo
+cd /home/gabriel/
+
+# Executa o script principal
+python3 Teste.py
